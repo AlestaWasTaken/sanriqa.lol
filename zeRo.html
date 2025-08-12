@@ -415,9 +415,7 @@
     </div>
 
     <!-- Audio Elements -->
-    <audio id="backgroundAudio" loop>
-        <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhCSGOzvLCciMFLYDQ8dKENwkZab7q4qJODQdSlOXsp2EoBjOg2O6YVhIGQ6rl8q1gGgU+ltryxnkpBClDo2m0VAA=" type="audio/wav">
-    </audio>
+
     
     <audio id="typingSound">
         <source src="data:audio/wav;base64,UklGRh4AAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YfIAAADDcC0yFOCxJcVxHrW6JNZrH7wqNv4u4rKzNNMqKQ==" type="audio/wav">
@@ -520,7 +518,7 @@
             await typeText(content, `[!] Error Code: ${generateHexCode()}`, 'red-text', 300);
             await typeText(content, '[+] Terminal session started (monitoring active)', 'green-text', 1000);
             await typeText(content, '[INFO] All commands are being logged and analyzed', 'yellow-text', 500);
-            await typeText(content, 'â"€'.repeat(60), '', 300);
+            await typeText(content, '-'.repeat(60), '', 300);
             
             // Show input line
             document.getElementById('inputLine').style.display = 'flex';
